@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-size: 75%;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+}
+
+col:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+footer {
+    margin-top: 2em;
+}
+
+h1 {
+    padding: 0 12px;
+}
+
+/* Generic styling, for Desktop/Laptops */
+table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
+
+td, th {
+    border: 3px solid #000000;
+    padding: 6px 12px;
+    vertical-align: text-top;
+}
+
+th {
+    font-size: 125%;
+}
+
+#page-wrap {
+    margin: 2em;
+}
