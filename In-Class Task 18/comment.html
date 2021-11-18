@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Comment Form</title>
+
+	<!-- Stylesheet -->
+	<style type="text/css">
+		@supports (display: grid) {
+			form {
+				background-color: #EAEAEA;
+				display: grid;
+				font-family: Arial, sans-serif;
+				gap: 1em;
+				grid-gap: 1em;
+				grid-template-columns: 6em 1fr;
+				grid-template-rows: auto;
+				min-width: 25em;
+				padding: 1.5em;
+				width: 60%;
+			}
+			input[type="submit"] {
+				grid-column: 2 / 3;
+				margin-left: 0;
+				width: 10em;
+			}
+		}
+		form {
+			background-color: #EAEAEA;
+			font-family: Arial, sans-serif;
+			padding: 10px;
+			width: 350px;
+		}
+		input[type="submit"] {
+			margin-left: 110px;
+		}
+		input, textarea {
+			display: block;
+			margin-top: 10px;
+		}
+		label {
+			clear: left;
+			display: block;
+			float: left;
+			margin-top: 10px;
+			padding-right: 10px;
+			text-align: right;
+			width: 100px;
+		}
+		.red {
+			color: red;
+		}
+		#rating {
+			margin-top: -0.5em;
+			padding-left: 2.5em;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Send Us Your Comments</h1>
+	<p>Required fields are marked with an asterisk <span class="red">*</span>.</p>
+	<form method="post" action="https://webdevbasics.net/scripts/demo.php">
+		<label for="myName"><span class="red">*</span>Name:</label>
+		<input type="text" name="myName" id="myName" required placeholder="First and Last Name">
+
+		<label for="myEmail"><span class="red">*</span>Email:</label>
+		<input type="email" name="myEmail" id="myEmail" required placeholder="you@domain.com">
+
+		<label for="myRating">Rating:</label>
+		<input type="range" name="myRating" id="myRating" min="1" max="10">
+		<span id="rating">(1 - 10)</span><br>
+
+		<label for="myComments"><span class="red">*</span>Comment:</label>
+		<textarea name="myComments" id="myComments" rows="2" cols="20" required></textarea>
+
+		<input type="submit" value="Submit">
+	</form>
+</body>
+
+</html>
