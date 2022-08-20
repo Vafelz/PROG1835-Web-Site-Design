@@ -1,0 +1,28 @@
+body {
+	background-color: lightblue;
+	font-family: Roboto, sans-serif;
+	margin: auto;
+	padding: 2em;
+	width: 50%;
+}
+
+footer {
+	margin-top: 8em;
+}
+
+hr {
+	border: 1px solid white;
+	border-radius: 4px;
+}
+
+li {
+	margin-bottom: .5em;
+}
+
+ol, ul {
+	margin-bottom: 2em;
+}
+
+ul {
+	list-style-type: square;
+}
